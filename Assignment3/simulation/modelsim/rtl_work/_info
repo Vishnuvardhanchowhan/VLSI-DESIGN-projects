@@ -1,0 +1,324 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/simulation/modelsim
+Eabcgate
+Z1 w1696715737
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Gates.vhdl
+Z5 FD:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Gates.vhdl
+l0
+L56 1
+V01T<zHQTYH44>b3X5[[Xa0
+!s100 jfcGkfEk3V]zHOS1Abz=b0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1699371919
+!i10b 1
+Z8 !s108 1699371919.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Gates.vhdl|
+Z10 !s107 D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Atrivial
+R2
+R3
+DEx4 work 7 abcgate 0 22 01T<zHQTYH44>b3X5[[Xa0
+!i122 0
+l61
+L60 4
+Vz=ZRadA8beHXC[X`JHoKL2
+!s100 96OcNa:58a<D4@YkGbmac3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eandgate
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L32 1
+V=jChlg>@aU7l1HG9_hR:T1
+!s100 HIGXISdn0nAI;P^kD0gAV2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Atrivial
+R2
+R3
+DEx4 work 7 andgate 0 22 =jChlg>@aU7l1HG9_hR:T1
+!i122 0
+l37
+L36 4
+V?mFOD>T<ZPeoLKAIZ3zkL1
+!s100 Rm^G=UKB33WjG@QC<`@KX3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ecin_map_g
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L71 1
+V_IUS]jlWkd@GTFbEikhGV3
+!s100 a4;IQinYgA7S1XE:E8eRa1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Atrivial
+R2
+R3
+DEx4 work 9 cin_map_g 0 22 _IUS]jlWkd@GTFbEikhGV3
+!i122 0
+l76
+L75 4
+V1FZbcMjm>?i[a6n9CJfGo2
+!s100 Q]a5AAiFjRMeia^>@BfmA0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1696715820
+Z14 DPx4 work 5 gates 0 22 7W]Fld3W9G;@Ub>70;dXP3
+R2
+R3
+!i122 2
+R0
+Z15 8D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/DUT.vhdl
+Z16 FD:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/DUT.vhdl
+l0
+L5 1
+VY9o:1L59k=V1iHKbYgZ2n0
+!s100 jY8Taeh7_CcBDEJ`VdHaC0
+R6
+31
+Z17 !s110 1699371921
+!i10b 1
+Z18 !s108 1699371921.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/DUT.vhdl|
+Z20 !s107 D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R14
+R2
+R3
+DEx4 work 3 dut 0 22 Y9o:1L59k=V1iHKbYgZ2n0
+!i122 2
+l21
+L11 121
+VojTEa422H?D9>X=EoHKo=1
+!s100 _7<__?@2JF0bfmgfg[?I60
+R6
+31
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L5 1
+V7W]Fld3W9G;@Ub>70;dXP3
+!s100 E1FJfAU:^W0ofGHIHXKQl0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emain
+Z21 w1696717787
+R14
+R2
+R3
+!i122 1
+R0
+Z22 8D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Main.vhdl
+Z23 FD:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Main.vhdl
+l0
+L7 1
+VzS`_A[Q:4E=bMJJF6ez<l2
+!s100 lbEKAHlHOXb8^_iLS4gcW3
+R6
+31
+Z24 !s110 1699371920
+!i10b 1
+Z25 !s108 1699371920.000000
+Z26 !s90 -reportprogress|300|-93|-work|work|D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Main.vhdl|
+Z27 !s107 D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Main.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R14
+R2
+R3
+DEx4 work 4 main 0 22 zS`_A[Q:4E=bMJJF6ez<l2
+!i122 1
+l41
+L21 718
+V^a9?5_:I5nQAj<ZM[fIL72
+!s100 =_98@R9n9P>dF8<kkUAeX2
+R6
+31
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R11
+R12
+Etestbench
+Z28 w1696715781
+R3
+R2
+!i122 3
+R0
+Z29 8D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Testbench.vhdl
+Z30 FD:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z31 !s110 1699371922
+!i10b 1
+Z32 !s108 1699371922.000000
+Z33 !s90 -reportprogress|300|-93|-work|work|D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Testbench.vhdl|
+!s107 D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 3
+l69
+L9 132
+VkZGk5^:^IAN:z>zGIPPYU1
+!s100 =>czG2CmKQ8GlTXV?:maX3
+R6
+31
+R31
+!i10b 1
+R32
+R33
+Z34 !s107 D:/Work_Files/Books_and_study_files/Engineering/Electrical/EE671_VLSI_Design/Assignment3/Assignment3/Testbench.vhdl|
+!i113 1
+R11
+R12
+Exorgate
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L44 1
+V2kU5<?B?flOnH4k3ZOVIa1
+!s100 _48]F[Jf;z]54hBW?MMSZ2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Atrivial
+R2
+R3
+DEx4 work 7 xorgate 0 22 2kU5<?B?flOnH4k3ZOVIa1
+!i122 0
+l49
+L48 4
+V?Oknl>oF@5nE9_cDXdXJ<1
+!s100 [dI?V5NJGNA;>LXROj_Qb2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

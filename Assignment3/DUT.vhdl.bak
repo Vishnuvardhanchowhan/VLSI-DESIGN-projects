@@ -1,0 +1,82 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity DUT is
+   port(input_vector: in std_logic_vector(32 downto 0);
+       	output_vector: out std_logic_vector(16 downto 0));
+end entity;
+
+
+architecture DutWrap of DUT is
+component main is 
+    port(A, B: in std_logic_vector(15 downto 0);
+	      Cin: in std_logic;
+		   S: out std_logic_vector(15 downto 0);
+			Cout: out std_logic);
+end component main;
+begin
+
+   add_instance: main 
+			port map (
+					
+					A(15) => input_vector(32),
+					A(14) => input_vector(31),
+					A(13) => input_vector(30),
+					A(12) => input_vector(29),
+               A(11) => input_vector(28),
+					A(10) => input_vector(27),
+					A(9) => input_vector(26),
+					A(8) => input_vector(25),
+					A(7) => input_vector(24),
+					A(6) => input_vector(23),
+					A(5) => input_vector(22),
+					A(4) => input_vector(21),
+					A(3) => input_vector(20),
+					A(2) => input_vector(19),
+					A(1) => input_vector(18),
+					A(0) => input_vector(17),
+	
+					B(15) => input_vector(16),
+					B(14) => input_vector(15),
+					B(13) => input_vector(14),
+					B(12) => input_vector(13),
+               B(11) => input_vector(12),
+					B(10) => input_vector(11),
+					B(9) => input_vector(10),
+					B(8) => input_vector(9),
+					B(7) => input_vector(8),
+					B(6) => input_vector(7),
+					B(5) => input_vector(6),
+					B(4) => input_vector(5),
+					B(3) => input_vector(4),
+					B(2) => input_vector(3),
+					B(1) => input_vector(2),
+					B(0) => input_vector(1),
+					
+					Cin => input_vector(0),
+					
+					
+                                       
+					Cout => output_vector(16),
+					
+					
+					S(15) => output_vector(15),
+					S(14) => output_vector(14),
+					S(13) => output_vector(13),
+					S(12) => output_vector(12),
+					S(11) => output_vector(11),
+					S(10) => output_vector(10),
+					S(9) => output_vector(9),
+					S(8) => output_vector(8),
+					S(7) => output_vector(7),
+					S(6) => output_vector(6),
+					S(5) => output_vector(5),
+					S(4) => output_vector(4),
+					S(3) => output_vector(3),
+					S(2) => output_vector(2),
+					S(1) => output_vector(1),
+					S(0) => output_vector(0));
+
+end DutWrap;
+

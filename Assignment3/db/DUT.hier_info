@@ -1,0 +1,1479 @@
+|DUT
+input_vector[0] => main:add_instance.Cin
+input_vector[1] => main:add_instance.B[0]
+input_vector[2] => main:add_instance.B[1]
+input_vector[3] => main:add_instance.B[2]
+input_vector[4] => main:add_instance.B[3]
+input_vector[5] => main:add_instance.B[4]
+input_vector[6] => main:add_instance.B[5]
+input_vector[7] => main:add_instance.B[6]
+input_vector[8] => main:add_instance.B[7]
+input_vector[9] => main:add_instance.B[8]
+input_vector[10] => main:add_instance.B[9]
+input_vector[11] => main:add_instance.B[10]
+input_vector[12] => main:add_instance.B[11]
+input_vector[13] => main:add_instance.B[12]
+input_vector[14] => main:add_instance.B[13]
+input_vector[15] => main:add_instance.B[14]
+input_vector[16] => main:add_instance.B[15]
+input_vector[17] => main:add_instance.B[16]
+input_vector[18] => main:add_instance.B[17]
+input_vector[19] => main:add_instance.B[18]
+input_vector[20] => main:add_instance.B[19]
+input_vector[21] => main:add_instance.B[20]
+input_vector[22] => main:add_instance.B[21]
+input_vector[23] => main:add_instance.B[22]
+input_vector[24] => main:add_instance.B[23]
+input_vector[25] => main:add_instance.B[24]
+input_vector[26] => main:add_instance.B[25]
+input_vector[27] => main:add_instance.B[26]
+input_vector[28] => main:add_instance.B[27]
+input_vector[29] => main:add_instance.B[28]
+input_vector[30] => main:add_instance.B[29]
+input_vector[31] => main:add_instance.B[30]
+input_vector[32] => main:add_instance.B[31]
+input_vector[33] => main:add_instance.A[0]
+input_vector[34] => main:add_instance.A[1]
+input_vector[35] => main:add_instance.A[2]
+input_vector[36] => main:add_instance.A[3]
+input_vector[37] => main:add_instance.A[4]
+input_vector[38] => main:add_instance.A[5]
+input_vector[39] => main:add_instance.A[6]
+input_vector[40] => main:add_instance.A[7]
+input_vector[41] => main:add_instance.A[8]
+input_vector[42] => main:add_instance.A[9]
+input_vector[43] => main:add_instance.A[10]
+input_vector[44] => main:add_instance.A[11]
+input_vector[45] => main:add_instance.A[12]
+input_vector[46] => main:add_instance.A[13]
+input_vector[47] => main:add_instance.A[14]
+input_vector[48] => main:add_instance.A[15]
+input_vector[49] => main:add_instance.A[16]
+input_vector[50] => main:add_instance.A[17]
+input_vector[51] => main:add_instance.A[18]
+input_vector[52] => main:add_instance.A[19]
+input_vector[53] => main:add_instance.A[20]
+input_vector[54] => main:add_instance.A[21]
+input_vector[55] => main:add_instance.A[22]
+input_vector[56] => main:add_instance.A[23]
+input_vector[57] => main:add_instance.A[24]
+input_vector[58] => main:add_instance.A[25]
+input_vector[59] => main:add_instance.A[26]
+input_vector[60] => main:add_instance.A[27]
+input_vector[61] => main:add_instance.A[28]
+input_vector[62] => main:add_instance.A[29]
+input_vector[63] => main:add_instance.A[30]
+input_vector[64] => main:add_instance.A[31]
+output_vector[0] << main:add_instance.S[0]
+output_vector[1] << main:add_instance.S[1]
+output_vector[2] << main:add_instance.S[2]
+output_vector[3] << main:add_instance.S[3]
+output_vector[4] << main:add_instance.S[4]
+output_vector[5] << main:add_instance.S[5]
+output_vector[6] << main:add_instance.S[6]
+output_vector[7] << main:add_instance.S[7]
+output_vector[8] << main:add_instance.S[8]
+output_vector[9] << main:add_instance.S[9]
+output_vector[10] << main:add_instance.S[10]
+output_vector[11] << main:add_instance.S[11]
+output_vector[12] << main:add_instance.S[12]
+output_vector[13] << main:add_instance.S[13]
+output_vector[14] << main:add_instance.S[14]
+output_vector[15] << main:add_instance.S[15]
+output_vector[16] << main:add_instance.S[16]
+output_vector[17] << main:add_instance.S[17]
+output_vector[18] << main:add_instance.S[18]
+output_vector[19] << main:add_instance.S[19]
+output_vector[20] << main:add_instance.S[20]
+output_vector[21] << main:add_instance.S[21]
+output_vector[22] << main:add_instance.S[22]
+output_vector[23] << main:add_instance.S[23]
+output_vector[24] << main:add_instance.S[24]
+output_vector[25] << main:add_instance.S[25]
+output_vector[26] << main:add_instance.S[26]
+output_vector[27] << main:add_instance.S[27]
+output_vector[28] << main:add_instance.S[28]
+output_vector[29] << main:add_instance.S[29]
+output_vector[30] << main:add_instance.S[30]
+output_vector[31] << main:add_instance.S[31]
+output_vector[32] << main:add_instance.Cout
+
+
+|DUT|main:add_instance
+A[0] => xorgate:T1_xor1.A
+A[0] => Cin_map_G:T1_and1.A
+A[1] => xorgate:T1_xor2.A
+A[1] => andgate:T1_and2.A
+A[2] => xorgate:T1_xor3.A
+A[2] => andgate:T1_and3.A
+A[3] => xorgate:T1_xor4.A
+A[3] => andgate:T1_and4.A
+A[4] => xorgate:T1_xor5.A
+A[4] => andgate:T1_and5.A
+A[5] => xorgate:T1_xor6.A
+A[5] => andgate:T1_and6.A
+A[6] => xorgate:T1_xor7.A
+A[6] => andgate:T1_and7.A
+A[7] => xorgate:T1_xor8.A
+A[7] => andgate:T1_and8.A
+A[8] => xorgate:T1_xor9.A
+A[8] => andgate:T1_and9.A
+A[9] => xorgate:T1_xor10.A
+A[9] => andgate:T1_and10.A
+A[10] => xorgate:T1_xor11.A
+A[10] => andgate:T1_and11.A
+A[11] => xorgate:T1_xor12.A
+A[11] => andgate:T1_and12.A
+A[12] => xorgate:T1_xor13.A
+A[12] => andgate:T1_and13.A
+A[13] => xorgate:T1_xor14.A
+A[13] => andgate:T1_and14.A
+A[14] => xorgate:T1_xor15.A
+A[14] => andgate:T1_and15.A
+A[15] => xorgate:T1_xor16.A
+A[15] => andgate:T1_and16.A
+A[16] => xorgate:T1_xor17.A
+A[16] => andgate:T1_and17.A
+A[17] => xorgate:T1_xor18.A
+A[17] => andgate:T1_and18.A
+A[18] => xorgate:T1_xor19.A
+A[18] => andgate:T1_and19.A
+A[19] => xorgate:T1_xor20.A
+A[19] => andgate:T1_and20.A
+A[20] => xorgate:T1_xor21.A
+A[20] => andgate:T1_and21.A
+A[21] => xorgate:T1_xor22.A
+A[21] => andgate:T1_and22.A
+A[22] => xorgate:T1_xor23.A
+A[22] => andgate:T1_and23.A
+A[23] => xorgate:T1_xor24.A
+A[23] => andgate:T1_and24.A
+A[24] => xorgate:T1_xor25.A
+A[24] => andgate:T1_and25.A
+A[25] => xorgate:T1_xor26.A
+A[25] => andgate:T1_and26.A
+A[26] => xorgate:T1_xor27.A
+A[26] => andgate:T1_and27.A
+A[27] => xorgate:T1_xor28.A
+A[27] => andgate:T1_and28.A
+A[28] => xorgate:T1_xor29.A
+A[28] => andgate:T1_and29.A
+A[29] => xorgate:T1_xor30.A
+A[29] => andgate:T1_and30.A
+A[30] => xorgate:T1_xor31.A
+A[30] => andgate:T1_and31.A
+A[31] => xorgate:T1_xor32.A
+A[31] => andgate:T1_and32.A
+B[0] => xorgate:T1_xor1.B
+B[0] => Cin_map_G:T1_and1.B
+B[1] => xorgate:T1_xor2.B
+B[1] => andgate:T1_and2.B
+B[2] => xorgate:T1_xor3.B
+B[2] => andgate:T1_and3.B
+B[3] => xorgate:T1_xor4.B
+B[3] => andgate:T1_and4.B
+B[4] => xorgate:T1_xor5.B
+B[4] => andgate:T1_and5.B
+B[5] => xorgate:T1_xor6.B
+B[5] => andgate:T1_and6.B
+B[6] => xorgate:T1_xor7.B
+B[6] => andgate:T1_and7.B
+B[7] => xorgate:T1_xor8.B
+B[7] => andgate:T1_and8.B
+B[8] => xorgate:T1_xor9.B
+B[8] => andgate:T1_and9.B
+B[9] => xorgate:T1_xor10.B
+B[9] => andgate:T1_and10.B
+B[10] => xorgate:T1_xor11.B
+B[10] => andgate:T1_and11.B
+B[11] => xorgate:T1_xor12.B
+B[11] => andgate:T1_and12.B
+B[12] => xorgate:T1_xor13.B
+B[12] => andgate:T1_and13.B
+B[13] => xorgate:T1_xor14.B
+B[13] => andgate:T1_and14.B
+B[14] => xorgate:T1_xor15.B
+B[14] => andgate:T1_and15.B
+B[15] => xorgate:T1_xor16.B
+B[15] => andgate:T1_and16.B
+B[16] => xorgate:T1_xor17.B
+B[16] => andgate:T1_and17.B
+B[17] => xorgate:T1_xor18.B
+B[17] => andgate:T1_and18.B
+B[18] => xorgate:T1_xor19.B
+B[18] => andgate:T1_and19.B
+B[19] => xorgate:T1_xor20.B
+B[19] => andgate:T1_and20.B
+B[20] => xorgate:T1_xor21.B
+B[20] => andgate:T1_and21.B
+B[21] => xorgate:T1_xor22.B
+B[21] => andgate:T1_and22.B
+B[22] => xorgate:T1_xor23.B
+B[22] => andgate:T1_and23.B
+B[23] => xorgate:T1_xor24.B
+B[23] => andgate:T1_and24.B
+B[24] => xorgate:T1_xor25.B
+B[24] => andgate:T1_and25.B
+B[25] => xorgate:T1_xor26.B
+B[25] => andgate:T1_and26.B
+B[26] => xorgate:T1_xor27.B
+B[26] => andgate:T1_and27.B
+B[27] => xorgate:T1_xor28.B
+B[27] => andgate:T1_and28.B
+B[28] => xorgate:T1_xor29.B
+B[28] => andgate:T1_and29.B
+B[29] => xorgate:T1_xor30.B
+B[29] => andgate:T1_and30.B
+B[30] => xorgate:T1_xor31.B
+B[30] => andgate:T1_and31.B
+B[31] => xorgate:T1_xor32.B
+B[31] => andgate:T1_and32.B
+Cin => Cin_map_G:T1_and1.Cin
+Cin => abcgate:C_0.C
+Cin => abcgate:C_2.C
+Cin => abcgate:C_4.C
+Cin => abcgate:C_8.C
+Cin => abcgate:C_16.C
+Cin => abcgate:C_32.C
+Cin => xorgate:SUM0.B
+S[0] <= xorgate:SUM0.uneq
+S[1] <= xorgate:SUM1.uneq
+S[2] <= xorgate:SUM2.uneq
+S[3] <= xorgate:SUM3.uneq
+S[4] <= xorgate:SUM4.uneq
+S[5] <= xorgate:SUM5.uneq
+S[6] <= xorgate:SUM6.uneq
+S[7] <= xorgate:SUM7.uneq
+S[8] <= xorgate:SUM8.uneq
+S[9] <= xorgate:SUM9.uneq
+S[10] <= xorgate:SUM10.uneq
+S[11] <= xorgate:SUM11.uneq
+S[12] <= xorgate:SUM12.uneq
+S[13] <= xorgate:SUM13.uneq
+S[14] <= xorgate:SUM14.uneq
+S[15] <= xorgate:SUM15.uneq
+S[16] <= xorgate:SUM16.uneq
+S[17] <= xorgate:SUM17.uneq
+S[18] <= xorgate:SUM18.uneq
+S[19] <= xorgate:SUM19.uneq
+S[20] <= xorgate:SUM20.uneq
+S[21] <= xorgate:SUM21.uneq
+S[22] <= xorgate:SUM22.uneq
+S[23] <= xorgate:SUM23.uneq
+S[24] <= xorgate:SUM24.uneq
+S[25] <= xorgate:SUM25.uneq
+S[26] <= xorgate:SUM26.uneq
+S[27] <= xorgate:SUM27.uneq
+S[28] <= xorgate:SUM28.uneq
+S[29] <= xorgate:SUM29.uneq
+S[30] <= xorgate:SUM30.uneq
+S[31] <= xorgate:SUM31.uneq
+Cout <= abcgate:C_32.abc
+
+
+|DUT|main:add_instance|xorgate:T1_xor1
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor2
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor3
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor4
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor5
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor6
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor7
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor8
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor9
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor10
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor11
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor12
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor13
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor14
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor15
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor16
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor17
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor18
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor19
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor20
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor21
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor22
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor23
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor24
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor25
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor26
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor27
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor28
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor29
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor30
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor31
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:T1_xor32
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|Cin_map_G:T1_and1
+A => Bit0_G.IN0
+A => Bit0_G.IN0
+B => Bit0_G.IN1
+B => Bit0_G.IN1
+Cin => Bit0_G.IN1
+Bit0_G <= Bit0_G.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and2
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and3
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and4
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and5
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and6
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and7
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and8
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and9
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and10
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and11
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and12
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and13
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and14
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and15
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and16
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and17
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and18
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and19
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and20
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and21
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and22
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and23
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and24
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and25
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and26
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and27
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and28
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and29
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and30
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and31
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T1_and32
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor1
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor3
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor5
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor7
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor9
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor11
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor13
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor15
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor17
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor19
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor21
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor23
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor25
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor27
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor29
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T2_xor31
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc1
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc3
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc5
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc7
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc9
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc11
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc13
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc15
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc17
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc19
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc21
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc23
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc25
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc27
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc29
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T2_abc31
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor1
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor2
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor3
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor4
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor5
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor6
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor7
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T3_xor8
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc1
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc2
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc3
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc4
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc5
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc6
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc7
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T3_abc8
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T4_xor1
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T4_xor2
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T4_xor3
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T4_xor4
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T4_abc1
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T4_abc2
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T4_abc3
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T4_abc4
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T5_xor1
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T5_xor2
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T5_abc1
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T5_abc2
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|andgate:T6_xor1
+A => prod.IN0
+B => prod.IN1
+prod <= prod.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:T6_abc1
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_0
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_2
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_4
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_8
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_16
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_12
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_6
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_10
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_14
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_18
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_20
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_22
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_24
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_26
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_28
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_30
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_32
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_3
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_5
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_7
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_9
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_11
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_13
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_15
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_17
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_19
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_21
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_25
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_23
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_27
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_29
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|abcgate:C_31
+A => abc.IN1
+B => abc.IN0
+C => abc.IN1
+abc <= abc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM0
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM1
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM2
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM3
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM4
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM5
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM6
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM7
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM8
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM9
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM10
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM11
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM12
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM13
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM14
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM15
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM16
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM17
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM18
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM19
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM20
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM21
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM22
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM23
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM24
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM25
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM26
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM27
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM28
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM29
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM30
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|main:add_instance|xorgate:SUM31
+A => uneq.IN0
+B => uneq.IN1
+uneq <= uneq.DB_MAX_OUTPUT_PORT_TYPE
+
+

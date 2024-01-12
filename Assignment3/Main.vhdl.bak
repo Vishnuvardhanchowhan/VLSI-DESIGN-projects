@@ -1,0 +1,546 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+library work;
+use work.Gates.all;
+
+
+entity main is 
+    port(A, B: in std_logic_vector(15 downto 0);
+	      Cin: in std_logic;
+		   S: out std_logic_vector(15 downto 0);
+			Cout: out std_logic);
+end entity main;
+architecture struct of main is
+
+signal G0_0, G0_1, G0_2, G0_3, G0_4, G0_5, G0_6, G0_7, G0_8, G0_9, G0_10, G0_11, G0_12, G0_13, G0_14, G0_15: std_logic;
+
+signal P0_0, P0_1, P0_2, P0_3, P0_4, P0_5, P0_6, P0_7, P0_8, P0_9, P0_10, P0_11, P0_12, P0_13, P0_14, P0_15: std_logic;
+
+signal G1_1_0, G1_2_1, G1_3_2, G1_4_3, G1_5_4, G1_6_5, G1_7_6, G1_8_7, G1_9_8, G1_10_9, G1_11_10, G1_12_11, G1_13_12, G1_14_13, G1_15_14: std_logic;
+
+signal P1_1_0, P1_2_1, P1_3_2, P1_4_3, P1_5_4, P1_6_5, P1_7_6, P1_8_7, P1_9_8, P1_10_9, P1_11_10, P1_12_11, P1_13_12, P1_14_13, P1_15_14: std_logic;
+
+signal G2_3_0, G2_4_1, G2_5_2, G2_6_3, G2_7_4, G2_8_5, G2_9_6, G2_10_7, G2_11_8, G2_12_9, G2_13_10, G2_14_11, G2_15_12: std_logic; 
+
+signal P2_3_0, P2_4_1, P2_5_2, P2_6_3, P2_7_4, P2_8_5, P2_9_6, P2_10_7, P2_11_8, P2_12_9, P2_13_10, P2_14_11, P2_15_12: std_logic;
+
+signal G3_7_0, G3_8_1, G3_9_2, G3_10_3, G3_11_4, G3_12_5, G3_13_6, G3_14_7, G3_15_8: std_logic;
+
+signal P3_7_0, P3_8_1, P3_9_2, P3_10_3, P3_11_4, P3_12_5, P3_13_6, P3_14_7, P3_15_8: std_logic;
+
+signal G4_15_0, P4_15_0: std_logic;
+
+signal C0, C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13, C14, C15: std_logic;
+
+begin
+
+------- timestep 0
+
+
+-- A, B are available
+
+C0 <= Cin;
+
+-------- timestep 1
+
+--P0_i's = Ai + Bi
+
+T1_xor1: xorgate 
+       port map(A => A(0), B => B(0), uneq => P0_0);
+		 
+T1_xor2: xorgate 
+       port map(A => A(1), B => B(1), uneq => P0_1);
+		 
+T1_xor3: xorgate 
+       port map(A => A(2), B => B(2), uneq => P0_2);
+		 
+T1_xor4: xorgate 
+       port map(A => A(3), B => B(3), uneq => P0_3);
+		 
+T1_xor5: xorgate 
+       port map(A => A(4), B => B(4), uneq => P0_4);
+		 
+T1_xor6: xorgate 
+       port map(A => A(5), B => B(5), uneq => P0_5);
+		 
+T1_xor7: xorgate 
+       port map(A => A(6), B => B(6), uneq => P0_6);
+		 
+T1_xor8: xorgate 
+       port map(A => A(7), B => B(7), uneq => P0_7);
+		 
+T1_xor9: xorgate 
+       port map(A => A(8), B => B(8), uneq => P0_8);
+		 
+T1_xor10: xorgate 
+       port map(A => A(9), B => B(9), uneq => P0_9);
+		 
+T1_xor11: xorgate 
+       port map(A => A(10), B => B(10), uneq => P0_10);
+		 
+T1_xor12: xorgate 
+       port map(A => A(11), B => B(11), uneq => P0_11);
+		 
+T1_xor13: xorgate 
+       port map(A => A(12), B => B(12), uneq => P0_12);
+		 
+T1_xor14: xorgate 
+       port map(A => A(13), B => B(13), uneq => P0_13);
+		 
+T1_xor15: xorgate 
+       port map(A => A(14), B => B(14), uneq => P0_14);
+		 
+T1_xor16: xorgate 
+       port map(A => A(15), B => B(15), uneq => P0_15);
+		 
+
+-- G0_i's = Ai . Bi
+
+T1_and1: andgate
+       port map(A => A(0), B => B(0), prod => G0_0);
+		 
+T1_and2: andgate
+       port map(A => A(1), B => B(1), prod => G0_1);
+		 
+T1_and3: andgate
+       port map(A => A(2), B => B(2), prod => G0_2);
+		 
+T1_and4: andgate
+       port map(A => A(3), B => B(3), prod => G0_3);
+		 
+T1_and5: andgate
+       port map(A => A(4), B => B(4), prod => G0_4);
+		 
+T1_and6: andgate
+       port map(A => A(5), B => B(5), prod => G0_5);
+		 
+T1_and7: andgate
+       port map(A => A(6), B => B(6), prod => G0_6);
+		 
+T1_and8: andgate
+       port map(A => A(7), B => B(7), prod => G0_7);
+		 
+T1_and9: andgate
+       port map(A => A(8), B => B(8), prod => G0_8);
+		 
+T1_and10: andgate
+       port map(A => A(9), B => B(9), prod => G0_9);
+		 
+T1_and11: andgate
+       port map(A => A(10), B => B(10), prod => G0_10);
+		 
+T1_and12: andgate
+       port map(A => A(11), B => B(11), prod => G0_11);
+		 
+T1_and13: andgate
+       port map(A => A(12), B => B(12), prod => G0_12);
+		 
+T1_and14: andgate
+       port map(A => A(13), B => B(13), prod => G0_13);
+		 
+T1_and15: andgate
+       port map(A => A(14), B => B(14), prod => G0_14);
+		 
+T1_and16: andgate
+       port map(A => A(15), B => B(15), prod => G0_15);
+		 
+		 
+-- Carries
+
+C1 <= G0_0;
+
+-- Sums
+
+T1_S0: xorgate
+       port map(A => P0_0, B => C0, uneq => S(0));
+
+
+
+----------timestep 2
+
+-- P1_i_i-1 = P0_i . P0_i-1
+
+T2_xor1: xorgate
+       port map(A => P0_1, B => P0_0, uneq => P1_1_0);
+		 
+T2_xor2: xorgate
+       port map(A => P0_2, B => P0_1, uneq => P1_2_1);
+		 
+T2_xor3: xorgate
+       port map(A => P0_3, B => P0_2, uneq => P1_3_2);
+		 
+T2_xor4: xorgate
+       port map(A => P0_4, B => P0_3, uneq => P1_4_3);
+		 
+T2_xor5: xorgate
+       port map(A => P0_5, B => P0_4, uneq => P1_5_4);
+		 
+T2_xor6: xorgate
+       port map(A => P0_6, B => P0_5, uneq => P1_6_5);
+		 
+T2_xor7: xorgate
+       port map(A => P0_7, B => P0_6, uneq => P1_7_6);
+		 
+T2_xor8: xorgate
+       port map(A => P0_8, B => P0_7, uneq => P1_8_7);
+		 
+T2_xor9: xorgate
+       port map(A => P0_9, B => P0_8, uneq => P1_9_8);
+		 
+T2_xor10: xorgate
+       port map(A => P0_10, B => P0_9, uneq => P1_10_9);
+		 
+T2_xor11: xorgate
+       port map(A => P0_11, B => P0_10, uneq => P1_11_10);
+		 
+T2_xor12: xorgate
+       port map(A => P0_12, B => P0_11, uneq => P1_12_11);
+		 
+T2_xor13: xorgate
+       port map(A => P0_13, B => P0_12, uneq => P1_13_12);
+		 
+T2_xor14: xorgate
+       port map(A => P0_14, B => P0_13, uneq => P1_14_13);
+		 
+T2_xor15: xorgate
+       port map(A => P0_15, B => P0_14, uneq => P1_15_14);
+		 
+		 
+-- G1_i_i-1 = G0_i + P0_i . G0_i-1
+
+T2_abc1: abcgate
+       port map(A => G0_1, B => P0_1, C => G0_0, abc => G1_1_0);
+		 
+T2_abc2: abcgate
+       port map(A => G0_2, B => P0_2, C => G0_1, abc => G1_2_1);
+		 
+T2_abc3: abcgate
+       port map(A => G0_3, B => P0_3, C => G0_2, abc => G1_3_2);
+		 
+T2_abc4: abcgate
+       port map(A => G0_4, B => P0_4, C => G0_3, abc => G1_4_3);
+		 
+T2_abc5: abcgate
+       port map(A => G0_5, B => P0_5, C => G0_4, abc => G1_5_4);
+		 
+T2_abc6: abcgate
+       port map(A => G0_6, B => P0_6, C => G0_5, abc => G1_6_5);
+		 
+T2_abc7: abcgate
+       port map(A => G0_7, B => P0_7, C => G0_6, abc => G1_7_6);
+		 
+T2_abc8: abcgate
+       port map(A => G0_8, B => P0_8, C => G0_7, abc => G1_8_7);
+		 
+T2_abc9: abcgate
+       port map(A => G0_9, B => P0_9, C => G0_8, abc => G1_9_8);
+		 
+T2_abc10: abcgate
+       port map(A => G0_10, B => P0_10, C => G0_9, abc => G1_10_9);
+		 
+T2_abc11: abcgate
+       port map(A => G0_11, B => P0_11, C => G0_10, abc => G1_11_10);
+		 
+T2_abc12: abcgate
+       port map(A => G0_12, B => P0_12, C => G0_11, abc => G1_12_11);
+		 
+T2_abc13: abcgate
+       port map(A => G0_13, B => P0_13, C => G0_12, abc => G1_13_12);
+		 
+T2_abc14: abcgate
+       port map(A => G0_14, B => P0_14, C => G0_13, abc => G1_14_13);
+		 
+T2_abc15: abcgate
+       port map(A => G0_15, B => P0_15, C => G0_14, abc => G1_15_14);
+		 
+		 
+-- Carries 
+
+C2 <= G1_1_0;
+
+--sums
+
+T2_S1: xorgate
+       port map(A => P0_1, B => C1, uneq => S(1));
+
+
+
+--------- Timestep 3 
+
+-- P2_i_i-3 = P1_i_i-1 . P1_i-2_i-3
+
+T3_xor1: xorgate
+       port map(A => P1_3_2, B => P1_1_0, uneq => P2_3_0);
+		 
+T3_xor2: xorgate
+       port map(A => P1_4_3, B => P1_2_1, uneq => P2_4_1);
+		 
+T3_xor3: xorgate
+       port map(A => P1_5_4, B => P1_3_2, uneq => P2_5_2);
+		 
+T3_xor4: xorgate
+       port map(A => P1_6_5, B => P1_4_3, uneq => P2_6_3);
+		 
+T3_xor5: xorgate
+       port map(A => P1_7_6, B => P1_5_4, uneq => P2_7_4);
+		 
+T3_xor6: xorgate
+       port map(A => P1_8_7, B => P1_6_5, uneq => P2_8_5);
+		 
+T3_xor7: xorgate
+       port map(A => P1_9_8, B => P1_7_6, uneq => P2_9_6);
+		 
+T3_xor8: xorgate
+       port map(A => P1_10_9, B => P1_8_7, uneq => P2_10_7);
+		 
+T3_xor9: xorgate
+       port map(A => P1_11_10, B => P1_9_8, uneq => P2_11_8);
+		 
+T3_xor10: xorgate
+       port map(A => P1_12_11, B => P1_10_9, uneq => P2_12_9);
+		 
+T3_xor11: xorgate
+       port map(A => P1_13_12, B => P1_11_10, uneq => P2_13_10);
+		 
+T3_xor12: xorgate
+       port map(A => P1_14_13, B => P1_12_11, uneq => P2_14_11);
+		 
+T3_xor13: xorgate
+       port map(A => P1_15_14, B => P1_13_12, uneq => P2_15_12);
+		 
+
+-- G2_i_i-3 = G1_i_i-1 + P1_i_i-1 . G1_i-2_i-3
+
+T3_abc1: abcgate
+       port map(A => G1_3_2, B => P1_3_2, C => G1_1_0, abc => G2_3_0);
+		 
+T3_abc2: abcgate
+       port map(A => G1_4_3, B => P1_4_3, C => G1_2_1, abc => G2_4_1);
+		 
+T3_abc3: abcgate
+       port map(A => G1_5_4, B => P1_5_4, C => G1_3_2, abc => G2_5_2);
+		 
+T3_abc4: abcgate
+       port map(A => G1_6_5, B => P1_6_5, C => G1_4_3, abc => G2_6_3);
+		 
+T3_abc5: abcgate
+       port map(A => G1_7_6, B => P1_7_6, C => G1_5_4, abc => G2_7_4);
+		 
+T3_abc6: abcgate
+       port map(A => G1_8_7, B => P1_8_7, C => G1_6_5, abc => G2_8_5);
+		 
+T3_abc7: abcgate
+       port map(A => G1_9_8, B => P1_9_8, C => G1_7_6, abc => G2_9_6);
+		 
+T3_abc8: abcgate
+       port map(A => G1_10_9, B => P1_10_9, C => G1_8_7, abc => G2_10_7);
+		 
+T3_abc9: abcgate
+       port map(A => G1_11_10, B => P1_11_10, C => G1_9_8, abc => G2_11_8);
+		 
+T3_abc10: abcgate
+       port map(A => G1_12_11, B => P1_12_11, C => G1_10_9, abc => G2_12_9);
+		 
+T3_abc11: abcgate
+       port map(A => G1_13_12, B => P1_13_12, C => G1_11_10, abc => G2_13_10);
+		 
+T3_abc12: abcgate
+       port map(A => G1_14_13, B => P1_14_13, C => G1_12_11, abc => G2_14_11);
+		 
+T3_abc13: abcgate
+       port map(A => G1_15_14, B => P1_15_14, C => G1_13_12, abc => G2_15_12);
+		 
+		 
+-- Carries
+
+C4 <= G2_3_0;
+
+T3_c3: abcgate
+       port map(A => G0_2, B => P0_2, C => C2, abc => C3);	
+		
+-- Sums
+
+T3_S2: xorgate
+       port map(A => P0_2, B => C2, uneq => S(2));	
+		 
+
+		 
+---------- Timestep 4
+
+-- P3_i_i-7 = P2_i_i-3 . P2_i-4_i-7
+
+T4_xor1: xorgate
+       port map(A => P2_7_4, B => P2_3_0, uneq => P3_7_0);
+		 
+T4_xor2: xorgate
+       port map(A => P2_8_5, B => P2_4_1, uneq => P3_8_1);
+		 
+T4_xor3: xorgate
+       port map(A => P2_9_6, B => P2_5_2, uneq => P3_9_2);
+		 
+T4_xor4: xorgate
+       port map(A => P2_10_7, B => P2_6_3, uneq => P3_10_3);
+		 
+T4_xor5: xorgate
+       port map(A => P2_11_8, B => P2_7_4, uneq => P3_11_4);
+		 
+T4_xor6: xorgate
+       port map(A => P2_12_9, B => P2_8_5, uneq => P3_12_5);
+		 
+T4_xor7: xorgate
+       port map(A => P2_13_10, B => P2_9_6, uneq => P3_13_6);
+		 
+T4_xor8: xorgate
+       port map(A => P2_14_11, B => P2_10_7, uneq => P3_14_7);
+		 
+T4_xor9: xorgate
+       port map(A => P2_15_12, B => P2_11_8, uneq => P3_15_8);
+		 
+		 
+-- G3_i_i-7 = G2_i_i-3 + P2_i_i-3 . G2_i-4_i-7
+
+T4_abc1: abcgate
+       port map(A => G2_7_4, B => P2_7_4, C => G2_3_0, abc => G3_7_0);
+		 
+T4_abc2: abcgate
+       port map(A => G2_8_5, B => P2_8_5, C => G2_4_1, abc => G3_8_1);
+		 
+T4_abc3: abcgate
+       port map(A => G2_9_6, B => P2_9_6, C => G2_5_2, abc => G3_9_2);
+		 
+T4_abc4: abcgate
+       port map(A => G2_10_7, B => P2_10_7, C => G2_6_3, abc => G3_10_3);
+		 
+T4_abc5: abcgate
+       port map(A => G2_11_8, B => P2_11_8, C => G2_7_4, abc => G3_11_4);
+		 
+T4_abc6: abcgate
+       port map(A => G2_12_9, B => P2_12_9, C => G2_8_5, abc => G3_12_5);
+		 
+T4_abc7: abcgate
+       port map(A => G2_13_10, B => P2_13_10, C => G2_9_6, abc => G3_13_6);
+		 
+T4_abc8: abcgate
+       port map(A => G2_14_11, B => P2_14_11, C => G2_10_7, abc => G3_14_7);
+		 
+T4_abc9: abcgate
+       port map(A => G2_15_12, B => P2_15_12, C => G2_11_8, abc => G3_15_8);
+		 
+
+-- carries
+
+C8 <= G3_7_0;
+
+T4_C5: abcgate
+       port map(A => G0_4, B => P2_15_12, C => P0_4, abc => C5);
+		 
+T4_C6: abcgate
+       port map(A => G1_5_4, B => P1_5_4, C => C4, abc => C6);
+		 
+-- Sums
+
+T4_S3: xorgate
+       port map(A => P0_3, B => C3, uneq => S(3));
+		 
+T4_S4: xorgate
+       port map(A => P0_4, B => C4, uneq => S(4));
+		 
+		 
+		 
+--------- Timestep 5
+
+-- P4_i_i-15 = P3_i_i-7 . P3_i-8_i-15
+
+T5_xor1: xorgate
+       port map(A => P3_15_8, B => P3_7_0, uneq => P4_15_0);
+		 
+-- G4_i_i-15 = G3_i_i-7 + P3_i_i-7 . G3_i-8_i-15
+
+T5_abc1: abcgate
+       port map(A => G3_15_8, B => P3_15_8, C => G3_7_0, abc => G4_15_0);
+		 
+-- Carries
+
+Cout <= G4_15_0;
+
+T5_C7: abcgate
+       port map(A => G0_6, B => P0_6, C => C6, abc => C7);
+		 
+T5_C9: abcgate
+       port map(A => G0_8, B => P0_8, C => C8, abc => C9);
+		 
+T5_C10: abcgate
+       port map(A => G1_9_8, B => P1_9_8, C => C8, abc => C10);
+		 
+T5_C12: abcgate
+       port map(A => G2_11_8, B => P2_11_8, C => C8, abc => C12);
+	
+
+-- Sums
+
+T5_S5: xorgate
+       port map(A => P0_5, B => C5, uneq => S(5));
+		 
+T5_S6: xorgate
+       port map(A => P0_6, B => C6, uneq => S(6));
+		 
+T5_S8: xorgate
+       port map(A => P0_8, B => C8, uneq => S(8));
+		 
+
+---------- Timestep 6
+
+--Carries
+
+T6_C11: abcgate
+       port map(A => G0_10, B => P0_10, C => C10, abc => C11);
+		 
+T6_C13: abcgate
+       port map(A => G0_12, B => P0_12, C => C12, abc => C13);
+		 
+T6_C14: abcgate
+       port map(A => G2_13_10, B => P2_13_10, C => C10, abc => C14);
+		 
+
+-- Sums
+
+T6_S7: xorgate
+       port map(A => P0_7, B => C7, uneq => S(7));
+		 
+T6_S9: xorgate
+       port map(A => P0_9, B => C9, uneq => S(9));
+		 
+T6_S10: xorgate
+       port map(A => P0_10, B => C10, uneq => S(10));
+		 
+T6_S12: xorgate
+       port map(A => P0_12, B => C12, uneq => S(12));
+		 
+	 
+
+--------- TimeStep 7
+
+-- Carries
+		 
+T7_C15: abcgate
+       port map(A => G0_14, B => P0_14, C => C14, abc => C15);
+		  
+
+--Sums
+
+T7_S11: xorgate
+       port map(A => P0_11, B => C11, uneq => S(11));
+		 
+T7_S13: xorgate
+       port map(A => P0_13, B => C13, uneq => S(13));
+		 
+T7_S14: xorgate
+       port map(A => P0_14, B => C14, uneq => S(14));
+		 
+T7_S15: xorgate
+       port map(A => P0_15, B => C15, uneq => S(15));
+		 
+
+		 
+end Struct;
+
